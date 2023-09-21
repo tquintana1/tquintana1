@@ -1,0 +1,26 @@
+#navbar{
+    background-color: #886CE4 !important ;
+}
+
+#button-ver{
+    background-color: #886CE4 !important ;
+}
+
+#texto-resaltado{
+    color: #410f3c;
+}
+
+form{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#enunciado-contacto{
+    margin-top: 20px;
+    background-color: #886CE4;
+    text-decoration-color: aliceblue;
+}
+
+#enunciado-text{
+    color: aliceblue;
+}

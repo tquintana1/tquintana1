@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-body" data-bs-theme="dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i class="fa-solid fa-face-kiss-wink-heart"></i> Euphory Market</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/tiendas.html">Tiendas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/perfil.html">Perfil de usuario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/trabajo.html">Trabaja con nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/nike.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Nuevas Zapatillas Nike</h5>
+          <p>Te presentamos las nuevas Zapatillas Nike que se encuentra disponibles en nuestros locales</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/vivo.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Nuevo video en Youtube</h5>
+          <p>Nuevo video en nuestro canal de Youtube explicando las técnicas de yoga y presentando a nuestros modelos.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/messi.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Maradona en EuphoryMarket</h5>
+          <p>¡Maradona desde el cielo se comunico con nosotros para convertirse en nuestro partner!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="px-4 pt-5 my-5 text-center">
+    <h1 class="display-4 fw-bold">¡Bienvenido a Euphory Market! 💜</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">¡Bienvenido a Euphory Market, tu destino de moda donde los sueños se convierten en estilo! En nuestro encantador rincón de la moda, encontrarás mucho más que ropa; descubrirás una experiencia de compra única que te llevará a un viaje de autodescubrimiento y elegancia.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="/pages/catalogo.html">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" id="button-ver"><i class="fa-solid fa-basket-shopping"></i> Ver catalogo</button></a>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-secondary btn-lg px-4"><i class="fa-regular fa-handshake"></i> Partners</button>
+      </div>
+    </div>
+    <div>
+      <div class="container px-5">
+        <img src="https://elcomercio.pe/resizer/1iLmGQwS7NdZR2d2d1G-cVM9WjA=/580x330/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/SMQEOQGBERDEFE4QETVB7D6HLQ.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevos partners</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/imagen1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/imagen2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/imagen3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <hr class="featurette-divider">
+
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Volver arriba</a></p>
+    <p>© 2017–2023 Euphory Market, Inc.</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/e183bde77b.js" crossorigin="anonymous"></script>
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
