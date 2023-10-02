@@ -24,3 +24,28 @@ form{
 #enunciado-text{
     color: aliceblue;
 }
+
+#floatingTextarea2{
+    height: 100px
+}
+
+#productos{
+    margin-top: 50px;
+}
+
+#datos-usuario{
+    margin-top: 20px
+}
+
+#datos-usuario-card{
+    width: 18rem;
+}
+
+#container-local{
+    margin-top: 20px;
+}
+
+#card-local{
+    width: 18rem;
+}
+
