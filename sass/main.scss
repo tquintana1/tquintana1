@@ -1,0 +1,179 @@
+@import 'variables';
+@import 'mixins';
+
+#navbar, #button-ver {
+    background-color: $color-primario !important;
+}
+
+
+
+#texto-resaltado {
+    color: $color-resaltado;
+}
+
+form {
+    @include margen-horizontal(100px);
+}
+
+#enunciado-contacto {
+    margin-top: $margin-top-card;
+    background-color: $color-primario;
+    text-decoration-color: aliceblue;
+}
+
+#enunciado-text {
+    color: aliceblue;
+}
+
+#floatingTextarea2 {
+    @include alto(100px);
+}
+
+#productos {
+    margin-top: 50px;
+}
+
+#datos-usuario {
+    margin-top: $margin-top-card;
+}
+
+#datos-usuario-card {
+    width: 18rem;
+}
+
+#container-local {
+    margin-top: $margin-top-card;
+}
+
+#card-local {
+    width: 18rem;
+}
+
+%logo-grid-item {
+    object-fit: cover;
+    max-width: 120px;
+    max-height: 60px;
+    filter: grayscale(100%) contrast(25%);
+    transition: filter 0.3s ease;
+    &:hover {
+        filter: grayscale(0) contrast(100%);
+    }
+}
+
+.logogrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 75px;
+    grid-gap: 4rem;
+    .logogrid__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logogrid__img {
+            @extend %logo-grid-item;
+            }
+        }
+    }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    min-height: 100vh;
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+@mixin item-1-styles {
+    font-size: 30px;
+}
+
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    @media only screen and (min-width: 500px) {
+        grid-template-columns: 1fr 1fr;
+        .item-1 {
+            grid-column: 1/ span 2;
+            h1 {
+                @include item-1-styles;
+            }
+        }
+    }
+    @media only screen and (min-width: 850px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* card */
+
+.card-hover-style {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    min-height: 100%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: $color-texto;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+    @include borde-redondeado(5px);
+    &:hover {
+        @extend .card-hover-style;
+    }
+    article {
+        padding: 20px;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .thumb {
+        padding-bottom: 60%;
+        background-size: cover;
+        background-position: center center;
+    }
+    p {
+        flex: 1;
+        line-height: 1.4;
+    }
+}
+
+/* typography */
+
+h1 {
+    font-size: 20px;
+    margin: 0;
+    color: $color-texto;
+}
+
+.card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: $color-texto-secundario;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+}
+
+#post {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

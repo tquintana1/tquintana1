@@ -1,0 +1,12 @@
+@mixin margen-horizontal($valor) {
+    margin-left: $valor;
+    margin-right: $valor;
+}
+
+@mixin alto($valor) {
+    height: $valor;
+}
+
+@mixin borde-redondeado($radio) {
+    border-radius: $radio;
+}
